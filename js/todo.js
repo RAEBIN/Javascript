@@ -1,3 +1,5 @@
+//여기는 다시한번 찬찬히 읽어볼 필요 있음
+
 const toDoForm = document.querySelector("#todo-form");
 //2. input
 const toDoInput = toDoForm.querySelector("input");
