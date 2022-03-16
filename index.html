@@ -6,15 +6,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Momentum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum App</title>
 </head>
 <body>
-    <form id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <script src="app.js"></script>
+
+    <div class="row" id="top">
+        <div class= "weather_top" id = "weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div class="row" id="mid">
+        <div class="col" id="main_box">
+            <h1 id="clock" class="js-title">00:00:00</h1>
+        </div>
+
+        <form id="login-form" class="hidden">
+            <input id="input_name" required maxlength="20" type="text" placeholder="What is your name?">
+            <input type="submit" value="Log In">
+        </form>
+        
+        <br>
+        
+        
+        <h2 id="greeting" class="hidden js-greetings"></h2>
+        <br>
+        <form id="todo-form">
+            <input id="input_todo" type="text" placeholder="Write a To Do and Press Enter" required/>
+        </form>
+        <ul id="todo-list" class="js-toDoList"></ul>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+
+
+
+    </div>
+
+    
+
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
